@@ -1,0 +1,8 @@
+// PermutationsCombinations.idl
+module PermutationsCombinationsModule {
+    interface PermutationsCombinations {
+        long factorial(in long n);
+        long permutation(in long n, in long r);
+        long combination(in long n, in long r);
+    };
+};

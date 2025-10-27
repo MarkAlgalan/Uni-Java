@@ -1,0 +1,13 @@
+Compilar idl
+idlj -fall fibonacci.idl
+Compilar todos los archivos javas juntos para que no haya problemas
+javac *.java FibonacciModule/*.java
+
+Generar db (Opcional?)
+start orbd -ORBinitialPort 1050
+
+Iniciar el servidor de nombres
+tnameserv -ORBInitialPort 1050
+
+Forma de ejecutar
+start java FibonacciServer -ORBinitialPort 1050

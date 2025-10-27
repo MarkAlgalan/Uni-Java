@@ -1,0 +1,7 @@
+module BancoModule {
+    interface Banco {
+        void depositar(in double cantidad);
+        void retirar(in double cantidad);
+        double consultarSaldo();
+    };
+};

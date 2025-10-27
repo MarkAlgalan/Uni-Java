@@ -1,0 +1,9 @@
+javac -d . PermutationsCombinationsServer.java PermutationsCombinationsClient.java PermutationsCombinationsModule/*.java
+
+orbd -ORBInitialPort 1050
+
+
+java -cp . PermutationsCombinationsServer -ORBInitialPort 1050 -ORBInitialHost localhost
+
+
+java -cp . PermutationsCombinationsClient -ORBInitialPort 1050 -ORBInitialHost localhost

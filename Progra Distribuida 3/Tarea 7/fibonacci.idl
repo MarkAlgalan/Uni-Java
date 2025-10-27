@@ -1,0 +1,5 @@
+module FibonacciModule {
+    interface Fibonacci {
+        long fibonacci(in long n);
+    };
+};
